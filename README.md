@@ -1,38 +1,46 @@
-# eye_blinking_detection_and_counting_system
-This program is developed in python programming language. It was intended to count human eye blinks. This application is very useful for sleeping detection and other medical related problems.
+# Eye Blinking Counting System
 
-# Download Shape Predictor
+## Introduction
 
-shape predictor() is a tool that takes in an image region containing some object and outputs a set of point locations that define the pose of the object.
-shape_predictor_68_face_landmarks.dat is a useful tool, it returns facial features locations as coordinates. 
-[Download Link:](https://osdn.net/projects/sfnet_dclib/downloads/dlib/v18.10/shape_predictor_68_face_landmarks.dat.bz2/)
+A simple prototype to count the number of times a human eye blinks. This program could be used to count how many times a human eye blinks.
+
+This prototype could be used to build sleeping detection and other medical-related computer vision applications.
+
+## Technologies & Frameworks
+
+- Python 3.8
+- Scipy module
+- Imutils module
+- Cmake module
+- DLIB Module
+- OpenCV Module
+
+### Why Scipy?
+
+SciPy is a free and open-source Python library used for scientific computing and technical computing. SciPy contains modules for optimization, linear algebra, integration, interpolation, special functions, FFT, signal and image processing, ODE solvers and other tasks common in science and engineering.
+
+**Note:** We use SciPy module to calculate distances in eyes.
+
+### Why Imutils?
+
+Imutils are a series of convenience functions to make basic image processing functions such as translation, rotation, resizing, skeletonization, and displaying Matplotlib images easier with OpenCV and Python.
+
+### Why Cmake?
+
+The DLIB module is depended on the cmake, therefore, we should install the cmake first in order to install DLIB.
+
+Cmake is cross-platform free and open-source software for build automation it is not a build system but rather it generates another system's build files.
 
 
-# Dependencies
-- Python 3.6
-- OpenCV
-- Scipy
-- Dlib
-- Scipy
+### Why DLIB?
+
+The DLIB is the main framework that is used to build this eye detection part.
+
+DLIB is a general purpose cross-platform software library written in the programming language C++. Its design is heavily influenced by ideas from design by contract and component-based software engineering. Thus it is, first and foremost, a set of independent software components.
 
 
-# Command Line Arguments
+### Why OpenCV?
 
-```
+OpenCV plays a major role in this project, the OpenCV accelerate the computer vision ability to this project.
 
-ap = argparse.ArgumentParser()
-ap.add_argument("-p", "--shape-predictor", required=True,
-	help="path to facial landmark predictor")
-ap.add_argument("-v", "--video", type=str, default="",
-	help="path to input video file")
-args = vars(ap.parse_args())
-
-```
-
-# How to run this program
-
-```
-
-python detect_blinks.py -p shape_predictor_68_face_landmarks.dat -v test.m4v 
-
-```
+## Configuration & Setup
