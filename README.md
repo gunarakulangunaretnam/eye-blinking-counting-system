@@ -14,6 +14,7 @@ This prototype could be used to build sleeping detection and other medical-relat
 - Cmake module
 - DLIB Module
 - OpenCV Module
+- Wget
 
 ### Why Scipy?
 
@@ -44,3 +45,61 @@ DLIB is a general purpose cross-platform software library written in the program
 OpenCV plays a major role in this project, the OpenCV accelerate the computer vision ability to this project.
 
 ## Configuration & Setup
+
+- Installing OpenCV
+  ```
+    pip install opencv-python
+  ```
+
+- Installing Imutils
+  ```
+    pip install imutils
+  ```
+
+- Installing Cmake
+  ```
+    pip install cmake
+  ```
+
+- Installing DLIB
+  ```
+    pip install dlib
+  ```
+
+- Installing Wget
+  ```
+    pip install wget
+  ```
+
+
+## Demo
+
+![Demo](github-readme-content/demo.gif)
+
+
+## To change the camera index
+
+![Demo](github-readme-content/camera.jpg)
+
+
+**Note:** The index "0" means the first camera, "1" is the second camera and so on. Here, the camera index could be changed.
+
+```
+python run.py
+```
+
+
+## Execution & Running
+
+```
+python run.py
+```
+
+Any Questions? | Conduct Me
+---
+
+* [Linkedin Profile](https://www.linkedin.com/in/gunarakulangunaretnam/)
+* [Facebook Profile](https://www.facebook.com/gunarakulan)
+* [Twitter Profile](https://twitter.com/gunarakulang)
+* [Instagram Profile](https://www.instagram.com/gunarakulan_gunaretnam/)
+* [Youtube Channel](https://www.youtube.com/channel/UCMWkED5sabgVZSCKjZuRJXA/videos)
