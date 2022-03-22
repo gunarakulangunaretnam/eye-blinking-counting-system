@@ -5,17 +5,24 @@ from imutils.video import VideoStream
 from imutils import face_utils
 import numpy as np
 import imutils
+import wget
 import time
 import dlib
 import cv2
 import os
 
 
-download_facelandmark_model():
+def download_facelandmark_model():
 	if(os.path.exists("model/shape_predictor_68_face_landmarks.dat")):
 		print("Yes")
 	else:
-		print("No")
+		try:
+			url='https://github.com/italojs/facial-landmarks-recognition/raw/master/shape_predictor_68_face_landmarks.dat'
+			wget.download(url)
+			os.rename("shape_predictor_68_face_landmarks.dat", "model/shape_predictor_68_face_landmarks.dat")
+		except:
+			print("Please connect to the internet...")
+
 
 download_facelandmark_model()
 
