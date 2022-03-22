@@ -22,6 +22,7 @@ def download_facelandmark_model():
 			os.rename("shape_predictor_68_face_landmarks.dat", "model/shape_predictor_68_face_landmarks.dat")
 		except:
 			print("Please connect to the internet...")
+			exit()
 
 
 download_facelandmark_model()
