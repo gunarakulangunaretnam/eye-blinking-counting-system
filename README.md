@@ -1,4 +1,4 @@
-# EYE BLINKING COUNTING SYSTEM
+# Eye Blinking Counting System
 
 ## Introduction
 
@@ -95,7 +95,7 @@ python run.py
 python run.py
 ```
 
-# CONTACT
+# Contact
 
 ### Website: 
 
